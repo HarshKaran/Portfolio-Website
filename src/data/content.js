@@ -3,6 +3,9 @@
 //  Edit values here to update the whole site.
 // =============================================================
 
+// public/ files are resolved against the deploy base (works at a domain root or a subpath like GitHub Pages)
+const base = import.meta.env.BASE_URL
+
 export const profile = {
   name: 'Harsh Karan',
   // rotating typewriter roles in the hero
@@ -12,10 +15,10 @@ export const profile = {
     'Passionate about building features and adapting to new tech — for me, coding is a vibe. I turn ideas into fast, interactive, real-world products.',
   location: 'India',
   email: 'harshkaran163@gmail.com',
-  resumeUrl: '/Harsh_Karan_Resume.pdf',
+  resumeUrl: `${base}Harsh_Karan_Resume.pdf`,
   // put your photo file in /public/assets/ and set the path here
-  // e.g. '/assets/harsh.jpg'  — leave '' to show a styled placeholder
-  photo: '/assets/harsh.webp',
+  // e.g. `${base}assets/harsh.jpg`  — leave '' to show a styled placeholder
+  photo: `${base}assets/harsh.webp`,
 }
 
 export const socials = {
