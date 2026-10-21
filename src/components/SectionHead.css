@@ -1,0 +1,11 @@
+.sh-title { margin-top: 12px; }
+.sh-underline {
+  height: 3px;
+  width: 72px;
+  margin-top: 16px;
+  border-radius: 999px;
+  background: var(--accent-grad);
+  box-shadow: var(--glow-cyan);
+  transform-origin: left center;
+}
+.section-head.center .sh-underline { margin-left: auto; margin-right: auto; transform-origin: center; }
